@@ -1,0 +1,26 @@
+{
+  "name": "fetchjson",
+  "version": "1.0.0",
+  "description": "- For the purpose to learn Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heinlinaung/fetchjson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heinlinaung/fetchjson/issues"
+  },
+  "homepage": "https://github.com/heinlinaung/fetchjson#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.0"
+  }
+}
