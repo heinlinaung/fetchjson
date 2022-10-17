@@ -16,3 +16,11 @@ const subtract = (a: number, b: number) => {
   and if we return the wrong value, type inference would take that wonrg value type as expected type. like return false
    */
 }
+
+function divide(a: number, b: number): number {
+  return a / b
+}
+
+const multiply = (a: number, b: number): Number => {
+  return a * b
+}
