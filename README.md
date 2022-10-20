@@ -8,3 +8,4 @@
 - [x] Type annotation and inference : Object
 - [x] Type annotation and inference : Array
 - [x] Tuples , type alias
+- [x] Interfaces
