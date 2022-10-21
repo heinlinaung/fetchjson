@@ -1,5 +1,5 @@
 {
-  "name": "fetchjson",
+  "name": "typescript-tutorial",
   "version": "1.0.0",
   "description": "- For the purpose to learn Typescript",
   "main": "index.js",
@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/heinlinaung/fetchjson#readme",
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@types/faker": "^6.6.9",
     "axios": "^0.27.2"
   },
   "devDependencies": {
-    "@types/node": "^18.11.0"
+    "@types/node": "^18.11.0",
+    "typescript": "^4.8.4"
   }
 }

@@ -1,4 +1,4 @@
-# fetchjson
+# Typescript-tutorial
 - For the purpose to learn Typescript
 
 ## Progress
@@ -10,3 +10,4 @@
 - [x] Tuples , type alias
 - [x] Interfaces
 - [x] Classes
+- [x] Project
