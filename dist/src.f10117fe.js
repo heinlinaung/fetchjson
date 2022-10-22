@@ -22870,6 +22870,9 @@ var User = /** @class */function () {
       lng: +faker_1.faker.address.longitude()
     };
   }
+  User.prototype.markerContent = function () {
+    return "User name : ".concat(this.name);
+  };
   return User;
 }();
 exports.User = User;
@@ -22890,6 +22893,9 @@ var Company = /** @class */function () {
       lng: +faker_1.faker.address.longitude()
     };
   }
+  Company.prototype.markerContent = function () {
+    return "User name : ".concat(this.companyName);
+  };
   return Company;
 }();
 exports.Company = Company;
@@ -22930,7 +22936,7 @@ var CustomMap = /** @class */function () {
     });
     marker.addListener('click', function () {
       var infoWindow = new google.maps.InfoWindow({
-        content: 'hiiii~'
+        content: mapObject.markerContent()
       });
       infoWindow.open(_this.googleMap, marker);
     });

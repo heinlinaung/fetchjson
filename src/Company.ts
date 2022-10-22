@@ -14,4 +14,7 @@ export class Company {
       lng: +faker.address.longitude()
     }
   }
+  markerContent() {
+    return `User name : ${this.companyName}`
+  }
 }
