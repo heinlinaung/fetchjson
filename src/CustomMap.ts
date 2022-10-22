@@ -1,5 +1,3 @@
-import { User } from './User'
-import { Company } from './Company'
 interface MapObject {
   location: {
     lat: number,
@@ -30,12 +28,18 @@ export class CustomMap {
       - have to update the code if one of those arguments removed from the app
       - solved by using interface 'MapObject'
      */
-    new google.maps.Marker({
+    const marker = new google.maps.Marker({
       map: this.googleMap,
       position: {
         lat: mapObject.location.lat,
         lng: mapObject.location.lng
       }
+    })
+    marker.addListener('click', () => {
+      const infoWindow = new google.maps.InfoWindow({
+        content: 'hiiii~'
+      })
+      infoWindow.open(this.googleMap, marker)
     })
   }
 }

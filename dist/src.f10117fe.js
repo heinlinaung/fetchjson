@@ -22911,6 +22911,7 @@ var CustomMap = /** @class */function () {
     });
   }
   CustomMap.prototype.addMarker = function (mapObject) {
+    var _this = this;
     // addMarker(mapObject: User | Company): void {
     /* this OR here does
     - only allow the field(s) which exists in both User & Company (like 'location')
@@ -22920,12 +22921,18 @@ var CustomMap = /** @class */function () {
       - have to update the code if one of those arguments removed from the app
       - solved by using interface 'MapObject'
      */
-    new google.maps.Marker({
+    var marker = new google.maps.Marker({
       map: this.googleMap,
       position: {
         lat: mapObject.location.lat,
         lng: mapObject.location.lng
       }
+    });
+    marker.addListener('click', function () {
+      var infoWindow = new google.maps.InfoWindow({
+        content: 'hiiii~'
+      });
+      infoWindow.open(_this.googleMap, marker);
     });
   };
   return CustomMap;
