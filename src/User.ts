@@ -1,5 +1,6 @@
 import { faker } from '@faker-js/faker';
-export class User {
+import { MapObject } from './CustomMap';
+export class User implements MapObject {
   name: string;
   location: {
     lat: number;

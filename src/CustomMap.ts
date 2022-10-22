@@ -1,4 +1,4 @@
-interface MapObject {
+export interface MapObject {
   location: {
     lat: number,
     lng: number
