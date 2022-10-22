@@ -5,5 +5,5 @@ import { CustomMap } from './CustomMap'
 const user = new User()
 const com = new Company()
 const map = new CustomMap('map')
-map.addUserMarker(user)
-map.addCompanyMarker(com)
+map.addMarker(user)
+map.addMarker(com)
