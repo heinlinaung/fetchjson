@@ -22911,6 +22911,15 @@ var CustomMap = /** @class */function () {
     });
   }
   CustomMap.prototype.addMarker = function (mapObject) {
+    // addMarker(mapObject: User | Company): void {
+    /* this OR here does
+    - only allow the field(s) which exists in both User & Company (like 'location')
+    - check by
+      >_ mapObject. // & you can see there is only 'location' shows up
+    - downside : have to add the typed definition on every additional argument (like User | Company | Park | Garage)
+      - have to update the code if one of those arguments removed from the app
+      - solved by using interface 'MapObject'
+     */
     new google.maps.Marker({
       map: this.googleMap,
       position: {
