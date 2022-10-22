@@ -7,7 +7,7 @@ export class Company {
     lng: number;
   }
   constructor() {
-    this.companyName = faker.company.companyName()
+    this.companyName = faker.company.name()
     this.catchPhrase = faker.company.catchPhrase()
     this.location = {
       lat: +faker.address.latitude(),
